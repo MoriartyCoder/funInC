@@ -1,4 +1,4 @@
-#include "thread.h"
+#include "primes_threaded.h"
 
 #define RANGE 7
 #define STEP 1500
@@ -41,7 +41,7 @@ static void* myThreadFun(void *p_arg) {
   return NULL; 
 } 
 
-int main() { 
+extern void primes_threaded() { 
   pthread_t thread_ids[RANGE]; 
   TPARA     threads_parameter[RANGE];
 
@@ -56,6 +56,5 @@ int main() {
     pthread_join(thread_ids[i], NULL);
   }
 
-  exit(0); 
 }
 

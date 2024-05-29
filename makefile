@@ -10,7 +10,7 @@ SRCS := $(wildcard *.c) $(wildcard *.h) $(wildcard ../cstdlib/*.c) $(wildcard ..
 OBJS := $(SRCS:.c=.o)
 
 # Executable name
-EXEC = primes
+EXEC = fun 
 
 # Main target
 all: $(EXEC)
@@ -27,7 +27,9 @@ $(EXEC): $(OBJS)
 
 # Clean target
 clean:
-	rm -f primes $(wildcard *.o) 
+	rm -f fun $(wildcard *.o) 
 
 run:
-	./primes
+	./fun
+
+go: install run

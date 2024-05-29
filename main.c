@@ -1,9 +1,11 @@
 #include "tictactoe.h"
 #include "snakefall.h"
+#include "primes_threaded.h"
 
 
 #define SNAKEFALL 1
 #define TICTACTOE 2
+#define PRIMESTHREADED 3
 
 #define CURRENT TICTACTOE 
 
@@ -30,6 +32,10 @@ int main(int argc, char *argv[]) {
 
     case TICTACTOE:
       tictactoe();
+      break;
+
+    case PRIMESTHREADED:
+      primes_threaded();
       break;
 
     default:

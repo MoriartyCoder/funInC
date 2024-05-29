@@ -1,5 +1,5 @@
-#ifndef THREAD_H_   /* Include guard */
-#define THREAD_H_
+#ifndef MAIN_H_   /* Include guard */
+#define MAIN_H_
 
 #include <stdio.h>
 #include <stdlib.h>
